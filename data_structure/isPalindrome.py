@@ -9,3 +9,12 @@ def is_palindrome(s):
 		return False
 
 print(is_palindrome('aaa'))
+
+
+
+# version 2: use slice
+
+def is_palindrome2(s):
+	return s[::] == s[::-1]
+
+print(is_palindrome2('aaab'))
