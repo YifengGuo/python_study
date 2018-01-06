@@ -17,4 +17,8 @@ print(is_palindrome('aaa'))
 def is_palindrome2(s):
 	return s[::] == s[::-1]
 
-print(is_palindrome2('aaab'))
+s = 'aaab'
+print(is_palindrome2(s))
+
+print(s[::-1])
+print(type(s[::-1])) # return str
