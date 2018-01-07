@@ -50,3 +50,12 @@ print(my_list.pop()) # pop() has return value
 l = [3, 25, 6, 21, 1, 52, 12]
 l.sort() # sort() is void function,cannot assign another variable
 print(l)
+
+# append and +
+print('\nappend and +:')
+l1 = [1, 2, 3]
+l2 = l1.append(4)
+l3 = l1 + [4] # + operator creates a new list object
+print(l1)
+print(l2) # None for append() only modifies current list
+print(l3)
