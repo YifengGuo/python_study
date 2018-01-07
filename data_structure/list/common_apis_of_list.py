@@ -46,3 +46,7 @@ print(my_list.pop()) # pop() has return value
                      # pop(index), remove and return elemnt at ... index
                      # pop() remove and return last element in the list by default
 
+# sort
+l = [3, 25, 6, 21, 1, 52, 12]
+l.sort() # sort() is void function,cannot assign another variable
+print(l)
