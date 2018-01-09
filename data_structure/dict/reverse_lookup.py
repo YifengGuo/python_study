@@ -1,5 +1,5 @@
 d = {}
-s = 'jsaidjdsadawe'
+s = 'jsaidjjdsadawe'
 for char in s:
 	if char not in d:
 		d[char] = 1
@@ -8,9 +8,10 @@ for char in s:
 
 
 def reverse_lookup(d, v):
+	res = []
 	for key in d:
 		if d[key] == v:
-			return key
-	raise ValueError
+			res.append(key)
+	return res
 
 print(reverse_lookup(d, 3))
