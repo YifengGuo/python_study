@@ -30,3 +30,18 @@ def find_most_common(h):
 
 
 find_most_common(process_file('austen-emma.txt'))
+
+# test optional parameter
+def find_most_common2(h, num=10):
+	res = []
+	for key, value in h.items():
+		res.append((value, key))
+
+	res.sort(reverse=True)
+
+	# find top 10 most common words in the dict
+	print('The top 10 most common words are:')
+	for freq, word in res[:num]:
+		print(word, '\t', freq)
+
+find_most_common2(process_file('austen-emma.txt'))
